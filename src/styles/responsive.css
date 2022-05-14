@@ -1,0 +1,104 @@
+/* Responsif */ 
+
+@media screen and (max-width : 768px) {
+    nav ul{
+        position: fixed;
+        right: 0;
+        align-items: center;
+        background-color: white;
+        justify-content: space-evenly;
+        height: 100vh;
+        top: 0;
+        display: list-item;
+
+    }
+    .hamburger{
+        display: flex;
+    }
+    .nav-list-container{
+        display:none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    .nav-list-container.open{
+        display: block;
+    }
+    .first-content, .second-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .interior, #moment{
+        width: 100%;
+    }
+    .picture-food, .picture-drink{
+        width: 80%;
+    }
+    .img{
+        width: 100%;
+    }
+    .descript-menu, .form, .picture{
+        width: 80%;
+    }
+    #list-restaurant{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .hero__inner{
+        top:50%
+    }
+    .rigth-content, .left-second-content, .title-list{
+     padding: 0; 
+    }
+
+    .picture-descript{
+        flex-direction: column;
+    }
+    .food, .drink{
+        display: block;
+    }
+    .review-list{
+        grid-template-columns: 1fr 1fr;
+        gap : 1px;
+        
+    }
+    .review-card{
+        width: 80%;
+    }
+   
+}
+   @media screen and (max-width : 600px) {
+    .hero{
+        background-image: url("../../public/images/hero-image_2-small.jpg");
+    }
+}    
+@media screen and (max-width : 540px) {
+    .review-list{
+        display: block;
+    }
+    .review-card{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 540px) {
+    #list-restaurant{
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+   
+}
+@media screen and (min-width : 1000px) {
+    #list-restaurant{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+    }
+   
+}
+
+
+
